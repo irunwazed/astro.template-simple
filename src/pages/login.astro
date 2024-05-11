@@ -1,0 +1,14 @@
+---
+import Layout from "../components/layouts/index.astro"
+import { LoginForm } from "../components/modules/login/form"
+import Card from "../components/ui/card.astro"
+---
+
+
+<Layout title="Login" >
+	<main class="w-full h-screen flex items-center justify-center overflow-x-scroll" >
+    <Card class="w-full sm:w-auto  rounded-2xl px-8 py-10">
+      <LoginForm client:load />
+    </Card>
+  </main>
+</Layout>

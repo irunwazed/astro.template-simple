@@ -1,0 +1,12 @@
+---
+import Admin from "@/components/layouts/admin.astro"
+import Card from "@/components/ui/card.astro"
+import { TableComponent } from "@modules/main/skd/table"
+---
+
+<Admin title="Dasboard" >
+  <Card class="p-4">
+    tes
+    <TableComponent client:load />
+  </Card>
+</Admin>

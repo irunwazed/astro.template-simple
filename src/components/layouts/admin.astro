@@ -1,0 +1,12 @@
+---
+import Layout from "./index.astro"
+import Header from "./header.astro"
+const { title } = Astro.props;
+---
+
+<Layout title={title+" | Admin"} >
+  <Header />
+  <div class="container-px mt-4">
+    <slot />
+  </div>
+</Layout>
